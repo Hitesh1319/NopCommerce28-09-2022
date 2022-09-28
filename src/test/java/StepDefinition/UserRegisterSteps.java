@@ -5,7 +5,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
 import java.io.IOException;
 
 public class UserRegisterSteps extends BaseClass {
@@ -16,7 +15,8 @@ public class UserRegisterSteps extends BaseClass {
     }
 
     @When("User click on Register link")
-    public void user_click_on_register_link() {
+    public void user_click_on_register_link()
+    {
         pageFactory.getRegisterPage().clickOnRegister();
     }
 

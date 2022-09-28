@@ -10,7 +10,7 @@ import java.util.Properties;
 
 public class BaseClass {
     WebDriver driver;
-    protected PageFactory pageFactory;
+    public static PageFactory pageFactory;
 
     public void Setup() throws IOException {
         FileReader reader = new FileReader("src/test/java/PropertiesFiles/Config.properties");
